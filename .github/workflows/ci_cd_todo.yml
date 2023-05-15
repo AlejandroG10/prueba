@@ -63,8 +63,8 @@ jobs:
         script: |
             sleep 30
             docker stop web && docker rm web
-            docker rmi AlejandroG10/pruebaGitAws
-            docker run -d -p 80:5000 --name web AlejandroG10/pruebaGitAws
+            docker rmi AlejandroG10/galeria
+            docker run -d -p 80:5000 --name web AlejandroG10/galeria
             sleep 30
   curl:
     name: Test URL con curl
